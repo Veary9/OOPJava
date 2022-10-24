@@ -18,6 +18,9 @@ public class Main {
 
         //Lab 1 - Zadanie 4
         System.out.println(podzielna(13));
+
+        //Lab 1 - Zadanie 5
+        System.out.println(potega(5));
     }
 
     //Lab 1 - Zadanie 1
@@ -50,10 +53,12 @@ public class Main {
         return (a % 3 == 0 && a % 5 == 0) ? true : false;
     }
 
-    //Scannery
-    public static int getInt() {
-        return new Scanner(System.in).nextInt();
+    //Lab 1 - Zadanie 5
+    public static double potega(double a) {
+        return Math.pow(a, 3);
     }
+
+    //Scanner
     public static double getDouble() {
         return new Scanner(System.in).nextDouble();
     }
