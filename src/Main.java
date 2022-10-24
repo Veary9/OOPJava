@@ -12,6 +12,9 @@ public class Main {
         System.out.println("Wprowadz druga liczbe: ");
         double b = getDouble();
         wypisz(a, b);
+
+        //Lab 1 - Zadanie 3
+        System.out.println(parzysta(4));
     }
 
     //Lab 1 - Zadanie 1
@@ -32,6 +35,11 @@ public class Main {
         System.out.println("Suma: " + (a + b));
         System.out.println("Roznica: " + (a - b));
         System.out.println("Iloczyn: " + (a * b));
+    }
+
+    //Lab 1 - Zadanie 3
+    public static boolean parzysta(int n1) {
+        return (n1 % 2 == 0) ? true : false;
     }
 
     //Scannery
