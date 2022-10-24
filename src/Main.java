@@ -60,6 +60,9 @@ public class Main {
 
         //Lab 2 - Zadanie 1
         System.out.println("x = " + rownanie(7,5,38));
+
+        //Lab 2 - Zadanie 2
+        funkcjeOkreslone(-1, 5, 2);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -116,6 +119,32 @@ public class Main {
         int lStrona = 2*a + b;
         int pStrona = c * (-1);
         return pStrona / lStrona;
+    }
+
+    //Lab 2 - Zadanie 2
+    public static void funkcjeOkreslone(int a, int b, int c) {
+        int ax, ac;
+        double ab;
+
+        if(a > 0) {
+            ax = 2 * a;
+        } else if(a == 0) {
+            ax = 0;
+        } else {
+            ax = (-3) * a;
+        }
+
+        ab = (b >= 1) ? Math.pow(b, 2) : b;
+
+        if(c > 2) {
+            ac = 2 + c;
+        } else if (c == 2) {
+            ac = 8;
+        } else {
+            ac = c - 4;
+        }
+
+        System.out.println("Wynik dla A: " + ax + ", wynik dla B: " + ab + ", wynik dla C: " + ac);
     }
 
     //Scanner
