@@ -58,6 +58,7 @@ public class Main {
 
         //-----------------------------------------------------------------
 
+        /*
         //Lab 2 - Zadanie 1
         System.out.println("x = " + rownanie(7,5,38));
 
@@ -75,6 +76,18 @@ public class Main {
 
         //Lab 2 - Zadanie 6
         kalkulator(5, 2, 6);
+         */
+
+        //-----------------------------------------------------------------
+
+        //Lab 3 - Zadanie 1
+        System.out.println("Wprowadz liczbe studentow");
+        int iloscStudentow = getInt();
+        while(iloscStudentow < 1) {
+            System.out.println("Liczba studentow musi byc wieksza niz 0");
+            iloscStudentow = getInt();
+        }
+        sredniaStudentow(iloscStudentow);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -125,7 +138,7 @@ public class Main {
 
 
     //----------------------------------------------------------------------------
-
+    /*
     //Lab 2 - Zadanie 1
     public static int rownanie(int a, int b, int c) {
         int lStrona = 2*a + b;
@@ -226,6 +239,23 @@ public class Main {
                 System.out.println(a % b);
             break;
 
+        }
+    }
+     */
+
+    //-----------------------------------------------------------------
+
+    //Lab 3 - Zadanie 1
+    public static void sredniaStudentow(int n) {
+        int x = 0, srednia = 0;
+        if(n > 0) {
+            while(x < n) {
+                System.out.println("Podaj punkty dla studenta nr: " + (x + 1));
+                int punkty = getInt();
+                srednia = srednia + punkty;
+                x++;
+            }
+            System.out.println("Srednia punktow dla " + n + " studentow wynosi: " + (srednia / n));
         }
     }
 
