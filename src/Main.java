@@ -88,6 +88,9 @@ public class Main {
             iloscStudentow = getInt();
         }
         sredniaStudentow(iloscStudentow);
+
+        //Lab 3 - Zadanie 2
+        dodatnieUjemne();
     }
     /*
     //Lab 1 - Zadanie 1
@@ -257,6 +260,27 @@ public class Main {
             }
             System.out.println("Srednia punktow dla " + n + " studentow wynosi: " + (srednia / n));
         }
+    }
+
+    //Lab 3 - Zadanie 2
+    public static void dodatnieUjemne() {
+        int dodatnie = 0, ujemne = 0, zero = 0, sumaDodatnie = 0, sumaUjemne = 0;
+        for(int x = 0; x < 10; x++){
+            System.out.println("Wprowadz " + (x + 1) + " liczbe: ");
+            int liczba = getInt();
+            if(liczba > 0) {
+                dodatnie++;
+                sumaDodatnie = sumaDodatnie + liczba;
+            } else if(liczba < 0) {
+                ujemne++;
+                sumaUjemne = sumaUjemne + liczba;
+            } else {
+                zero++;
+            }
+        }
+        System.out.println("Liczb dodatnich: " + dodatnie + ". Suma dodatnich: " + sumaDodatnie);
+        System.out.println("Liczb ujemnych: " + ujemne + ". Suma ujemnych: " + sumaUjemne);
+        System.out.println("Liczba zer: " + zero);
     }
 
     //Scanner
