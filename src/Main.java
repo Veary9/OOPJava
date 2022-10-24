@@ -63,6 +63,9 @@ public class Main {
 
         //Lab 2 - Zadanie 2
         funkcjeOkreslone(-1, 5, 2);
+
+        //Lab 2 - Zadanie 3
+        sortowanie(5,3,6);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -145,6 +148,23 @@ public class Main {
         }
 
         System.out.println("Wynik dla A: " + ax + ", wynik dla B: " + ab + ", wynik dla C: " + ac);
+    }
+
+    //Lab 2 - Zadanie 3
+    public static void sortowanie(int a, int b, int c) {
+        if(a > b && a > c) {
+            if(b > c) {
+                System.out.println(c + ", " + b + ", " + a);
+            } else {
+                System.out.println(b + ", " + c + ", " + a);
+            }
+        } else if(a > b && a < c) {
+            System.out.println(b + ", " + a + ", " + c);
+        } else if(a < b && a > c) {
+            System.out.println(c + ", " + a + ", " + b);
+        } else {
+            System.out.println(a + ", " + c + ", " + b);
+        }
     }
 
     //Scanner
