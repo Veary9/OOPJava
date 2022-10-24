@@ -80,6 +80,7 @@ public class Main {
 
         //-----------------------------------------------------------------
 
+        /*
         //Lab 3 - Zadanie 1
         System.out.println("Wprowadz liczbe studentow");
         int iloscStudentow = getInt();
@@ -91,6 +92,9 @@ public class Main {
 
         //Lab 3 - Zadanie 2
         dodatnieUjemne();
+        */
+        //Lab 3 - Zadanie 3
+        sumaDodatnich(6);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -279,6 +283,16 @@ public class Main {
         System.out.println("Liczb dodatnich: " + dodatnie + ". Suma dodatnich: " + sumaDodatnie);
         System.out.println("Liczb ujemnych: " + ujemne + ". Suma ujemnych: " + sumaUjemne);
     }
+
+    //Lab 3 - Zadanie 3
+    public static void sumaDodatnich(int n) {
+        int suma = 0;
+        for(int x = 1; x <= n; x++) {
+            if(x % 2 == 0) suma = suma + x;
+        }
+        System.out.println("Suma liczb dodatnich w ciagu: " + suma);
+    }
+
 
     //Scanner
     public static double getDouble() {
