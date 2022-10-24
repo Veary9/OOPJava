@@ -21,6 +21,10 @@ public class Main {
 
         //Lab 1 - Zadanie 5
         System.out.println(potega(5));
+
+        //Lab 1 - Zadanie 6
+        System.out.println(pierwiastek(9));
+
     }
 
     //Lab 1 - Zadanie 1
@@ -45,17 +49,22 @@ public class Main {
 
     //Lab 1 - Zadanie 3
     public static boolean parzysta(int a) {
-        return (a % 2 == 0) ? true : false;
+        return a % 2 == 0;
     }
 
     //Lab 1 - Zadanie 4
     public static boolean podzielna(int a) {
-        return (a % 3 == 0 && a % 5 == 0) ? true : false;
+        return a % 3 == 0 && a % 5 == 0;
     }
 
     //Lab 1 - Zadanie 5
     public static double potega(double a) {
         return Math.pow(a, 3);
+    }
+
+    //Lab 1 - Zadanie 6
+    public static double pierwiastek(double a) {
+        return Math.sqrt(a);
     }
 
     //Scanner
