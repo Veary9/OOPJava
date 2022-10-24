@@ -264,7 +264,7 @@ public class Main {
 
     //Lab 3 - Zadanie 2
     public static void dodatnieUjemne() {
-        int dodatnie = 0, ujemne = 0, zero = 0, sumaDodatnie = 0, sumaUjemne = 0;
+        int dodatnie = 0, ujemne = 0, sumaDodatnie = 0, sumaUjemne = 0;
         for(int x = 0; x < 10; x++){
             System.out.println("Wprowadz " + (x + 1) + " liczbe: ");
             int liczba = getInt();
@@ -274,13 +274,10 @@ public class Main {
             } else if(liczba < 0) {
                 ujemne++;
                 sumaUjemne = sumaUjemne + liczba;
-            } else {
-                zero++;
             }
         }
         System.out.println("Liczb dodatnich: " + dodatnie + ". Suma dodatnich: " + sumaDodatnie);
         System.out.println("Liczb ujemnych: " + ujemne + ". Suma ujemnych: " + sumaUjemne);
-        System.out.println("Liczba zer: " + zero);
     }
 
     //Scanner
