@@ -95,6 +95,9 @@ public class Main {
         */
         //Lab 3 - Zadanie 3
         sumaDodatnich(6);
+
+        //Lab 3 - Zadanie 4
+        parzystyCiag(6);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -293,6 +296,17 @@ public class Main {
         System.out.println("Suma liczb dodatnich w ciagu: " + suma);
     }
 
+    //Lab 3 - Zadanie 4
+    public static void parzystyCiag(int n) {
+        int suma = 0;
+        for(int x = 0; x < n; x++) {
+            Random rand = new Random();
+            int liczba = rand.nextInt(55)-10;
+            if(liczba % 2 == 0) suma = suma + liczba;
+            System.out.println("Liczba " + (x + 1) + ": " + liczba);
+        }
+        System.out.println("Suma liczb parzystych z przedzialu wynosi: " + suma);
+    }
 
     //Scanner
     public static double getDouble() {
