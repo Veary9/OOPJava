@@ -72,6 +72,9 @@ public class Main {
 
         //Lab 2 - Zadanie 5
         komunikaty2(false, true);
+
+        //Lab 2 - Zadanie 6
+        kalkulator(5, 2, 6);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -196,6 +199,33 @@ public class Main {
             }
         } else {
             System.out.println("Mozna kupic auto");
+        }
+    }
+
+    //Lab 2 - Zadanie 6
+    public static void kalkulator(int opcja, int a, int b) {
+        switch (opcja) {
+            case 1:
+                System.out.println("Wybrales dodawanie");
+                System.out.println(a + b);
+            break;
+            case 2:
+                System.out.println("Wybrales odejmowanie");
+                System.out.println(a - b);
+            break;
+            case 3:
+                System.out.println("Wybrales mnozenie");
+                System.out.println(a * b);
+            break;
+            case 4:
+                System.out.println("Wybrales dzielenie");
+                System.out.println(a / b);
+            break;
+            case 5:
+                System.out.println("Wybrales dzielenie z reszta");
+                System.out.println(a % b);
+            break;
+
         }
     }
 
