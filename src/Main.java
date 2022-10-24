@@ -66,6 +66,9 @@ public class Main {
 
         //Lab 2 - Zadanie 3
         sortowanie(5,3,6);
+
+        //Lab 2 - Zadanie 4
+        komunikaty(false, false);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -164,6 +167,19 @@ public class Main {
             System.out.println(c + ", " + a + ", " + b);
         } else {
             System.out.println(a + ", " + c + ", " + b);
+        }
+    }
+
+    //Lab 2 - Zadanie 4
+    public static void komunikaty(boolean deszcz, boolean autobus) {
+        if(deszcz && autobus) {
+            System.out.println("Weź parasol, dostaniesz sie na uczelnie");
+        } else if(deszcz && !autobus) {
+            System.out.println("Nie dostaniesz sie na uczelnie");
+        } else if(!deszcz && autobus) {
+            System.out.println("Dostaniesz sie na uczelnie, milego dnia i pieknej pogody");
+        } else {
+            System.out.println("Pogoda ladna ale na uczelnie nie dojedziesz");
         }
     }
 
