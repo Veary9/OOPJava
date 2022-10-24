@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -24,6 +25,35 @@ public class Main {
 
         //Lab 1 - Zadanie 6
         System.out.println(pierwiastek(9));
+
+        //Lab 1 - Zadanie 7
+        System.out.println("Wprowadz pierwsza liczbe zakresu: ");
+        int y = getInt();
+        System.out.println("Wprowadz druga liczbe zakresu: ");
+        int z = getInt();
+
+        while(y <= 0) {
+            System.out.println("Pierwsza liczba nie moze byc mniejsza badz rowna 0");
+            y = getInt();
+        }
+
+        while(z <= 0) {
+            System.out.println("Druga liczba nie moze byc mniejsza badz rowna 0");
+            z = getInt();
+        }
+
+        while(y >= z) {
+            System.out.println("Druga liczba nie moze byc mniejsza od pierwszej");
+            z = getInt();
+        }
+
+        int suma = (z - y) + 1;
+        Random rand = new Random();
+        int x1 = rand.nextInt(suma) + y;
+        int x2 = rand.nextInt(suma) + y;
+        int x3 = rand.nextInt(suma) + y;
+
+        System.out.println(trojkat(x1, x2, x3));
 
     }
 
@@ -67,9 +97,18 @@ public class Main {
         return Math.sqrt(a);
     }
 
+    //Lab 1 - Zadanie 7
+    public static boolean trojkat(int a, int b, int c) {
+        return Math.pow(a, 2) == (Math.pow(b,2) + Math.pow(c, 2));
+    }
+
     //Scanner
     public static double getDouble() {
         return new Scanner(System.in).nextDouble();
+    }
+
+    public static int getInt() {
+        return new Scanner(System.in).nextInt();
     }
 
 }
