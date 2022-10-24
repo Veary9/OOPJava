@@ -69,6 +69,9 @@ public class Main {
 
         //Lab 2 - Zadanie 4
         komunikaty(false, false);
+
+        //Lab 2 - Zadanie 5
+        komunikaty2(false, true);
     }
     /*
     //Lab 1 - Zadanie 1
@@ -180,6 +183,19 @@ public class Main {
             System.out.println("Dostaniesz sie na uczelnie, milego dnia i pieknej pogody");
         } else {
             System.out.println("Pogoda ladna ale na uczelnie nie dojedziesz");
+        }
+    }
+
+    //Lab 2 - Zadanie 5
+    public static void komunikaty2(boolean znizka, boolean premia) {
+        if(!znizka || !premia) {
+            if(znizka) {
+                System.out.println("Zakup samochodu trzeba odlozyc");
+            } else {
+                System.out.println("Zakup samochodu trzeba odlozyc, nie ma znizki");
+            }
+        } else {
+            System.out.println("Mozna kupic auto");
         }
     }
 
