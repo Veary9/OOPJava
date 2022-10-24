@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        /*
         //Lab 1 - Zadanie 1
         Osoba();
 
@@ -54,9 +54,14 @@ public class Main {
         int x3 = rand.nextInt(suma) + y;
 
         System.out.println(trojkat(x1, x2, x3));
+        */
 
+        //-----------------------------------------------------------------
+
+        //Lab 2 - Zadanie 1
+        System.out.println("x = " + rownanie(7,5,38));
     }
-
+    /*
     //Lab 1 - Zadanie 1
     public static void Osoba() {
         System.out.println("Imię " + getImie() + ", wiek " + getWiek());
@@ -100,6 +105,17 @@ public class Main {
     //Lab 1 - Zadanie 7
     public static boolean trojkat(int a, int b, int c) {
         return Math.pow(a, 2) == (Math.pow(b,2) + Math.pow(c, 2));
+    }
+    */
+
+
+    //----------------------------------------------------------------------------
+
+    //Lab 2 - Zadanie 1
+    public static int rownanie(int a, int b, int c) {
+        int lStrona = 2*a + b;
+        int pStrona = c * (-1);
+        return pStrona / lStrona;
     }
 
     //Scanner
