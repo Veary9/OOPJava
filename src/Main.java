@@ -15,6 +15,9 @@ public class Main {
 
         //Lab 1 - Zadanie 3
         System.out.println(parzysta(4));
+
+        //Lab 1 - Zadanie 4
+        System.out.println(podzielna(13));
     }
 
     //Lab 1 - Zadanie 1
@@ -38,8 +41,13 @@ public class Main {
     }
 
     //Lab 1 - Zadanie 3
-    public static boolean parzysta(int n1) {
-        return (n1 % 2 == 0) ? true : false;
+    public static boolean parzysta(int a) {
+        return (a % 2 == 0) ? true : false;
+    }
+
+    //Lab 1 - Zadanie 4
+    public static boolean podzielna(int a) {
+        return (a % 3 == 0 && a % 5 == 0) ? true : false;
     }
 
     //Scannery
